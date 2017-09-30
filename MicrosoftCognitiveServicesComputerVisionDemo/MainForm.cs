@@ -10,7 +10,7 @@ namespace MicrosoftCognitiveServicesComputerVisionDemo
 {
     public partial class MainForm : Form
     {
-        private const string SubscriptionKey = "your secret key";
+        private const string SubscriptionKey = "17e72298c40a4532901b20c1df72c5b2";
 
         public MainForm()
         {
