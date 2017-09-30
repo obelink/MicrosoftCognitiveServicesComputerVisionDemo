@@ -19,7 +19,7 @@ namespace MicrosoftCognitiveServicesComputerVisionDemo
 
         private async void selectImageFilePathButton_Click(object sender, EventArgs e)
         {
-            var imageFilePath = GetImageFilePath();
+            var imageFilePath = FileHelper.GetImageFilePath();
 
             imageFilePathTextBox.Text = imageFilePath;
 
@@ -27,21 +27,7 @@ namespace MicrosoftCognitiveServicesComputerVisionDemo
               
             jsonResultTextBox.Text = FormatJson(json);
         }
-
-        private static string GetImageFilePath()
-        {
-            var openFileDialog = new OpenFileDialog()
-            {
-                Filter = "jpg files (*.jpg)|*.jpg|All files (*.*)|*.*"
-            };
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                return openFileDialog.FileName;
-            }
-
-            return string.Empty;
-        }
+        
 
         private static byte[] GetImageAsByteArray(string imageFilePath)
         {
@@ -57,7 +43,7 @@ namespace MicrosoftCognitiveServicesComputerVisionDemo
         private static string GetRequestUri()
         {
             const string uriBase = "https://westeurope.api.cognitive.microsoft.com/vision/v1.0/analyze";
-            const string requestParameters = "visualFeatures=Categories,Tags,Description";
+            const string requestParameters = "visualFeatures=Categories,Tags,Description,Color,Faces";
 
             return uriBase + "?" + requestParameters;
         }

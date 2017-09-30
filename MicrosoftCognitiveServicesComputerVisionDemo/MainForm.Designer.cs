@@ -35,6 +35,8 @@
             // 
             // imageFilePathTextBox
             // 
+            this.imageFilePathTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.imageFilePathTextBox.Location = new System.Drawing.Point(40, 37);
             this.imageFilePathTextBox.Multiline = true;
             this.imageFilePathTextBox.Name = "imageFilePathTextBox";
@@ -44,6 +46,7 @@
             // 
             // selectImageFilePathButton
             // 
+            this.selectImageFilePathButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.selectImageFilePathButton.Location = new System.Drawing.Point(792, 37);
             this.selectImageFilePathButton.Name = "selectImageFilePathButton";
             this.selectImageFilePathButton.Size = new System.Drawing.Size(75, 49);
@@ -54,6 +57,10 @@
             // 
             // jsonResultTextBox
             // 
+            this.jsonResultTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.jsonResultTextBox.Font = new System.Drawing.Font("Consolas", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jsonResultTextBox.Location = new System.Drawing.Point(40, 105);
             this.jsonResultTextBox.Multiline = true;
             this.jsonResultTextBox.Name = "jsonResultTextBox";
