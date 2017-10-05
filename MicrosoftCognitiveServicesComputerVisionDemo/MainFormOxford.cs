@@ -94,7 +94,7 @@ namespace MicrosoftCognitiveServicesComputerVisionDemo
             }
 
             var caption = $"{face.Age} - {face.Gender}";
-            var yellowBrush = new SolidBrush(System.Drawing.Color.Yellow);
+            var yellowBrush = new SolidBrush(System.Drawing.Color.Black);
             e.Graphics.DrawString(caption, new Font("Arial", 12), yellowBrush, rectangle);
         }
 
